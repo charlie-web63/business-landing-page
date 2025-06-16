@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SimpleTech Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      gap: 30px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      flex: 1 1 300px;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin-top: 15px;
+      color: #2c3e50;
+    }
+
+    .product p {
+      font-size: 14px;
+    }
+
+    .price {
+      font-weight: bold;
+      margin: 10px 0;
+      color: #e67e22;
+    }
+
+    button {
+      padding: 10px 15px;
+      background: #e67e22;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ca6f1e;
+    }
+
+    footer {
+      text-align: center;
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SimpleTech Store</h1>
+    <p>Quality Electronics at Great Prices</p>
+  </header>
+
+  <div class="product-container">
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Bluetooth+Headphones" alt="Bluetooth Headphones">
+      <h3>Bluetooth Headphones</h3>
+      <p>Wireless headphones with noise cancellation and long battery life.</p>
+      <div class="price">Ksh 3,500</div>
+      <button onclick="addToCart('Bluetooth Headphones')">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Smart+Watch" alt="Smart Watch">
+      <h3>Smart Watch</h3>
+      <p>Track fitness, receive notifications, and more with this sleek smartwatch.</p>
+      <div class="price">Ksh 4,200</div>
+      <button onclick="addToCart('Smart Watch')">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Phone+Charger" alt="Phone Charger">
+      <h3>Fast Charger</h3>
+      <p>Compatible with most Android and iPhone models. 20W fast charging.</p>
+      <div class="price">Ksh 1,000</div>
+      <button onclick="addToCart('Fast Charger')">Add to Cart<
