@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mama's Kitchen</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background: #e74c3c;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #e74c3c;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .dish {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .dish h3 {
+      margin-top: 0;
+    }
+
+    .dish p {
+      font-size: 14px;
+    }
+
+    footer {
+      background: #e74c3c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #e74c3c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mama's Kitchen</h1>
+    <p>Delicious Local Dishes, Made with Love</p>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu">
+      <div class="dish">
+        <h3>Ugali & Sukuma</h3>
+        <p>Served hot with beef or chicken stew.</p>
+        <strong>Ksh 250</strong>
+      </div>
+      <div class="dish">
+        <h3>Chapati & Beans</h3>
+        <p>Freshly rolled chapatis with spiced beans.</p>
+        <strong>Ksh 200</strong>
+      </div>
+      <div class="dish">
+        <h3>Nyama Choma</h3>
+        <p>Chargrilled goat meat served with kachumbari.</p>
+        <strong>Ksh 400</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Mama’s Kitchen is your home for traditional Kenyan meals made with heart and heritage. We serve fresh, affordable, and unforgettable dishes daily in a clean, friendly setting.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="handleMessage(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mama's Kitchen | All rights reserved.</p>
+  </footer>
+
+  <script>
+    function handleMessage(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      alert("Thanks for reaching out, " + name + "! We'll contact you soon.");
+    }
+  </script>
+
+</body>
+</html>
